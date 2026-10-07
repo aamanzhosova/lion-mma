@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="LION MMA">
+  <!-- октагон (клетка) -->
+  <polygon points="35,4 85,4 116,35 116,85 85,116 35,116 4,85 4,35" fill="#14213D" stroke="#F2C230" stroke-width="6"/>
+  <!-- грива -->
+  <polygon points="60.0,18.0 67.3,29.8 79.1,22.4 80.6,36.2 94.4,34.6 89.7,47.7 102.9,52.2 93.0,62.0 102.9,71.8 89.7,76.3 94.4,89.4 80.6,87.8 79.1,101.6 67.3,94.2 60.0,106.0 52.7,94.2 40.9,101.6 39.4,87.8 25.6,89.4 30.3,76.3 17.1,71.8 27.0,62.0 17.1,52.2 30.3,47.7 25.6,34.6 39.4,36.2 40.9,22.4 52.7,29.8" fill="#F2C230"/>
+  <!-- морда -->
+  <path d="M40 52 Q40 36 60 36 Q80 36 80 52 L80 72 Q80 90 60 92 Q40 90 40 72 Z" fill="#14213D"/>
+  <path d="M43 54 Q43 40 60 40 Q77 40 77 54 L77 71 Q77 87 60 89 Q43 87 43 71 Z" fill="#F7D976"/>
+  <!-- уши -->
+  <circle cx="44" cy="40" r="6" fill="#F7D976" stroke="#14213D" stroke-width="3"/>
+  <circle cx="76" cy="40" r="6" fill="#F7D976" stroke="#14213D" stroke-width="3"/>
+  <!-- брови и глаза -->
+  <path d="M47 57 L57 60" stroke="#14213D" stroke-width="3" stroke-linecap="round"/>
+  <path d="M73 57 L63 60" stroke="#14213D" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="53" cy="65" r="3" fill="#14213D"/>
+  <circle cx="67" cy="65" r="3" fill="#14213D"/>
+  <!-- нос и пасть -->
+  <path d="M54 73 L66 73 L60 80 Z" fill="#14213D"/>
+  <path d="M60 80 L60 84 M60 84 Q55 88 51 84 M60 84 Q65 88 69 84" stroke="#14213D" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
