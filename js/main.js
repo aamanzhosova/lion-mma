@@ -24,6 +24,16 @@ filterButtons.forEach(btn => {
   });
 });
 
+// Цели Top.Mail.Ru / MyTracker (счетчик 3800459)
+function tmrGoal(goal) {
+  var _tmr = window._tmr || (window._tmr = []);
+  _tmr.push({ id: "3800459", type: "reachGoal", goal: goal });
+}
+// Цель 1: клик по любой кнопке «Записаться» (ссылки на форму записи)
+document.querySelectorAll('a[href*="#signup"]').forEach(a => {
+  a.addEventListener('click', () => tmrGoal('signup_click'));
+});
+
 // 3. Форма записи (страница kontakty.html).
 // GitHub Pages не принимает данные форм, поэтому заявка не отправляется,
 // а только показывается подтверждение. Подключить отправку можно через Formspree и т.п.
@@ -31,6 +41,7 @@ const form = document.querySelector('#signup');
 if (form) {
   form.addEventListener('submit', e => {
     e.preventDefault();
+    tmrGoal('trial_signup'); // Цель 2: отправка заявки на пробную тренировку
     const name = form.querySelector('#name').value.trim();
     const ok = document.querySelector('.form-ok');
     ok.textContent = `${name || 'Спасибо'}, заявка принята. Администратор перезвонит в течение рабочего дня.`;

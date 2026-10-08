@@ -13,6 +13,53 @@
 <link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
+<!-- Top100 (Kraken) Counter -->
+<script>
+        (function (w, d, c) {
+        (w[c] = w[c] || []).push(function() {
+            var options = {
+                project: 7752699,
+                attributes_dataset: [ "mma-attribute" ],
+                trackHashes: true,
+                user_id: null,
+            };
+            try {
+                w.top100Counter = new top100(options);
+            } catch(e) { }
+        });
+        var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src =
+        (d.location.protocol == "https:" ? "https:" : "http:") +
+        "//st.top100.ru/top100/top100.js";
+
+        if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+    } else { f(); }
+    })(window, document, "_top100q");
+    </script>
+<noscript>
+<img alt="Топ-100" src="//counter.rambler.ru/top100.cnt?pid=7752699"/>
+</noscript>
+<!-- END Top100 (Kraken) Counter -->
+<!-- Top.Mail.Ru counter -->
+<script type="text/javascript">
+var _tmr = window._tmr || (window._tmr = []);
+_tmr.push({id: "3800459", type: "pageView", start: (new Date()).getTime()});
+(function (d, w, id) {
+  if (d.getElementById(id)) return;
+  var ts = d.createElement("script"); ts.type = "text/javascript"; ts.async = true; ts.id = id;
+  ts.src = "https://top-fwz1.mail.ru/js/code.js";
+  var f = function () {var s = d.getElementsByTagName("script")[0]; s.parentNode.insertBefore(ts, s);};
+  if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
+})(document, window, "tmr-code");
+</script>
+<noscript><div><img src="https://top-fwz1.mail.ru/counter?id=3800459;js=na" style="position:absolute;left:-9999px;" alt="Top.Mail.Ru" /></div></noscript>
+<!-- /Top.Mail.Ru counter -->
+
 <header class="site-header" data-mma-attribute="шапка">
 <div class="wrap">
 <a class="brand" data-mma-attribute="логотип" href="index.html"><img alt="" src="img/logo.svg"/><span>LION MMA</span></a>
@@ -82,40 +129,10 @@
     (s.colorDepth?s.colorDepth:s.pixelDepth))+";u"+escape(d.URL)+
     ";h"+escape(d.title.substring(0,150))+";"+Math.random()})
     (document,screen)</script><!--/LiveInternet-->
-<!-- Top100 (Kraken) Counter -->
-<script>
-        (function (w, d, c) {
-        (w[c] = w[c] || []).push(function() {
-            var options = {
-                project: 7752699,
-                attributes_dataset: [ "mma-attribute" ],
-                trackHashes: true,
-                user_id: null,
-            };
-            try {
-                w.top100Counter = new top100(options);
-            } catch(e) { }
-        });
-        var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src =
-        (d.location.protocol == "https:" ? "https:" : "http:") +
-        "//st.top100.ru/top100/top100.js";
-
-        if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-    } else { f(); }
-    })(window, document, "_top100q");
-    </script>
-<noscript>
-<img alt="Топ-100" src="//counter.rambler.ru/top100.cnt?pid=7752699"/>
-</noscript>
-<!-- END Top100 (Kraken) Counter -->
 <!-- Виджет Рамблер/топ-100 в подвале -->
 <a data-mma-attribute="Топ-100" href="https://top100.rambler.ru/" rel="noopener" target="_blank"><img alt="Рамблер/топ-100" height="31" src="img/top100.svg" title="Рамблер/топ-100" width="88"/></a>
+<!-- Логотип счетчика Top.Mail.Ru в подвале (если картинка сервиса недоступна, показывается img/topmail.svg) -->
+<a data-mma-attribute="Top.Mail.Ru" href="https://top.mail.ru/jump?from=3800459" rel="noopener" target="_blank"><img alt="Top.Mail.Ru" height="31" src="https://top-fwz1.mail.ru/counter?id=3800459;t=479;l=1" style="border:0;" title="Top.Mail.Ru" width="88" onerror="this.onerror=null;this.src='img/topmail.svg';"/></a>
 <!-- ===== КОНЕЦ СЧЕТЧИКОВ ===== -->
 </div>
 </footer>
